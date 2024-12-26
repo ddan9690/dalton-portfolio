@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daltons Web Portfolio</title>
+    <!-- ---------------------HTML CSS LINK------------------------ -->
+ <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- -----------------NAVIGATION BAR------------------------ -->
+    <nav class="navbar">
+        <div class="nav-content">
+        <a href="#" class="logo">Daltons.W</a>
+        <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+        </nav> 
+
+
+<!-- --------------------MAIN-SECTIONS-CONTAINER------------------ -->
+ <div class="container">
+            <!-- -------------SECTION 1:ABOUT ME------------------------ -->
+        <section class="about-me">
+             <div class="profile">
+                <div class="profile-img">
+                    <img src="img/dalton-profile.JPG" alt="">
+                </div>
+
+                <div class="header">
+                    <h2>Young Coder,Big Dreams</h2>
+                </div>
+                </div>
+
+                <hr>
+                <div class="profile-text">
+                    <p>Hi there? My name is Dalton.I am a student at St.Peters Mumias Junior Secondary School
+                        with a deep passion of software development.
+                        Coding isn't just a hobby, it's my cup of tea.I am obsessed by solving problems and 
+                        bringing ideas into life through coding.Everyday I am learning ,experimenting and 
+                        pushing myself to develop new skills.My projects reflect my journey.From small 
+                        beginnings to growing confidence as i create tools an dapplications that are both fun
+                        and functional.Join me as I build a future in technology,one project at a time.
+                    </p>
+             </div>
+            
+        </section>
+         
+          <!-- -------------SECTION 2:PROJECTS------------------------ -->
+        <section class="projects">
+            <div class="header">
+                <h1>The building blocks of my coding journey</h1>
+                <h4>There are some of my creations that highlight my growth</h4>
+            </div>
+            
+
+            <div class="project-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Stopwatch</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="img/dalton-profile.JPG" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>The projects helped me to understand the basics of javascript 
+                            timing functions
+                        </p>
+                    </div>
+                    <div class="card-btn">
+                        <a href="./html/stopwatch.html"><button>View Demo</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="img/dalton-profile.JPG" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>A dynamic shopping cart that helps
+                            me understand interactive web development
+                        </p>
+                    </div>
+                    <div class="card-btn">
+                        <a href="#"><button>Upcoming...</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>To-do-list</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="img/dalton-profile.JPG" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>A handy to-do-list to organise daily tasks
+                            .This project challanged me to think about functionality
+                            and design.
+                        </p>
+                    </div>
+                    <div class="card-btn">
+                        <a href="#"><button>Upcoming...</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+         <!-- -------------SECTION 3:CONTACTS------------------------ -->
+          <section class="contacts">
+            <div class="contact">
+                <h1 class="contact-title">Talk to Me</h1>
+                <h4>I would love to hear from you, whether you are a 
+                    recruiter,fellow dev or someone who shares  my love
+                    for coding,lets connect
+                </h4>
+<!-- -------------------FORM----------------------- -->
+               <div class="form-container">
+                <form action="#" id="form">
+                    <div class="input-control">
+                     <label for="name">Name</label>
+                     <input type="text" id="name">
+                    </div>
+ 
+                    <div class="input-control">
+                     <label for="email">Email</label>
+                     <input type="email" id="message">
+                    </div>
+                    <div class="input-control">
+                     <label for="message">Message</label>
+                     <textarea name="message" id="message"></textarea>
+                    </div>
+
+                    <button type="submit">Send Me a Message</button>
+ 
+                 </form>
+             </div>
+               </div>
+          </section>
+
+        <!-- -------------SECTION 4:SLIDER----------- -->
+        <section class="slider">
+            <div class="slider-container">
+                <div class="slider">
+                <div class="slide">
+                <img src="img/slider-3.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                <img src="img/slider-2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                <img src="img/slider-1.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                <img src="img/slider-4.jpg" alt="Slide 4">
+                </div>
+                </div>
+                <button class="slider-button" id="prevBtn">❮</button>
+                <button class="slider-button" id="nextBtn">❯</button>
+               
+               
+                <div class="dots-container"></div>
+                </div> 
+    
+        </section>
+        
+ </div>
+ <a href="#" class="btn"><button class="home-up">Top</button></a>
+
+   <!-- -------------SECTION 5:FOOTER------------------------ -->
+   <section class="footer">
+    <footer>
+       <p> <span>Copyright@.</span> Daltons Code.Powered By passion and persistence</p>
+    </footer>
+</section>
+   
+    <!-- -----------------JAVASCRIPT LINK---------------- -->
+     <script src=".//js/app.js"></script>
+</body>
+</html>

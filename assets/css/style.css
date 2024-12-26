@@ -1,0 +1,591 @@
+ :root{
+    --secondary-purple:#9c27b0;
+    --header-font:1.5rem;
+    --header-weight:800;
+    --header-family:Verdana,Genava,Tahoma,sans-serif;
+    --white:#fff;
+    --primary-purple:#7b1fa2;
+    --p-font:16px;
+    --primary-color:#ff6f61;
+ }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    } 
+   
+    body {
+    font-family: Arial, sans-serif;
+    min-height: 200vh; /* For scroll demo */
+    background-color: #f1f1f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    } 
+   
+    /* -----------NAVIGATION BAR-------------- */
+    .navbar {
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 0 20px #333;
+    } 
+   
+    .navbar.hidden {
+    transform: translateY(-100%);
+    } 
+   
+    .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    } 
+   
+    .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    } 
+   
+    /* --------------navigation links-------------- */
+    .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    } 
+   
+    .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    } 
+   
+    .nav-links a:hover {
+    color: #ff6f61;
+    } 
+   
+    .hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    } 
+   
+    .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    } 
+    
+   
+/* ----------main sections container------------ */
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    max-width: 1200px;
+}
+
+/* -----------SECTION 1:ABOUT ME-------------- */
+.about-me{
+    padding:0 40px;
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 100px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 20px #333;
+}
+.about-me .profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+/* -------profile img---------- */
+.about-me .profile .profile-img img{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #333;
+}
+/* ------------end of profile image-------- */
+
+/* --------about me section header */
+.about-me .profile .header{
+    margin: 0 auto;
+}
+.about-me .profile .header h2{
+   color: var(--primary-color);
+   font-size: 1.8rem;
+   font-family: var(--header-family);
+   font-weight: 700;
+}
+/* ------end of section header------ */
+
+.about-me .profile-text{
+    margin-top: 10px;
+    line-height: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+/* --------end of section header */
+
+/* --------------SECTION 2: PROJECTS----------- */
+.projects{
+    margin-top: 50px;
+}
+.projects .header{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.projects .header h1{
+    color: var(--primary-color);
+    font-family: var(--header-family);
+    margin-bottom: 20px;
+    font-weight: var(--header-weight);
+    font-size: 2rem;
+}
+.projects .header h4{
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.project-cards .card{
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 20px;
+    padding-left: 20px;
+    box-shadow: 0 0 20px #333;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    transition: .5s ;
+}
+.project-cards .card:hover{
+    background: var(--primary-color);
+   
+}
+.project-cards .card .card-img img{  
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.project-cards .card .card-header h2{
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.project-cards .card .card-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.project-cards .card .card-text p{
+    text-align: center;
+    color: var(--white);
+    font-family: cursive;
+}
+.project-cards .card .card-btn button{
+    background:#fafafa;
+    padding: 10px;
+    width: 50%;
+    color: #9c27b0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+.project-cards .card .card-btn button:hover{
+    background: linear-gradient(135deg,#153677,#4e085f);
+    box-shadow: 0 0 20px #333;
+    color: var(--white);
+    animation:ease-in;
+}
+
+/* ----------SECTION 3: CONTACT ME------------ */
+.contact{
+    width: 100%;
+    box-shadow: 0 0 20px #333;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+.contact h1{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.form-container{
+    width: 350px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #333;
+    margin-bottom: 30px;
+}
+.contact h4{
+    font-family: cursive;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact .input-control{
+    margin: 0 auto;
+    width: 100%;
+}
+.contact .input-control label{
+    display: block;
+   color:var(--primary-color);
+    
+}
+.contact .input-control input{
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #4e085f;
+    outline: none;
+    border-radius: 5px;
+}
+.contact .input-control textarea{
+    width: 300px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #4e085f;
+}
+.form-container button{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    color: #fff;
+    margin-left: 20px;
+    transition: .5s;
+}
+.form-container button:hover{
+    background: var(--primary-color);
+}
+/* --------------SECTION 4:SLIDER------------ */
+.slider{
+    margin-bottom: 30px;
+}
+.slider-container {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    } 
+   
+    .slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    } 
+   
+    .slide {
+    min-width: 100%;
+    height: 100%;
+    } 
+   
+    .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    } 
+   
+    .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.3s;
+    z-index: 10;
+    } 
+   
+    .slider-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    } 
+   
+    #prevBtn {
+    left: 0;
+    } 
+   
+    #nextBtn {
+    right: 0;
+    } 
+   
+    .dots-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+    } 
+   
+    .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    } 
+   
+    .dot.active {
+    background: white;
+    } 
+   
+    /* Media Queries */
+    @media (max-width: 768px) {
+    .slider-container {
+    aspect-ratio: 4/3; /* More square ratio for tablets */
+    } 
+   
+    .slider-button {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    } 
+   
+    .dot {
+    width: 8px;
+    height: 8px;
+    }
+    } 
+   
+    @media (max-width: 480px) {
+    .slider-container {
+    aspect-ratio: 1/1; /* Square ratio for mobile */
+    } 
+   
+    .slider-button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    } 
+   
+    .dot {
+    width: 6px;
+    height: 6px;
+    } 
+   
+    .dots-container {
+    bottom: 0.5rem;
+    gap: 0.3rem;
+    }
+    } 
+   
+    /* For very small screens */
+    @media (max-width: 320px) {
+    .slider-button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    } 
+   
+    .dots-container {
+    bottom: 0.3rem;
+    }
+    } 
+   
+    /* For landscape orientation on mobile */
+    @media (max-height: 480px) and (orientation: landscape) {
+    .slider-container {
+    aspect-ratio: 16/9; /* Maintain wider ratio for landscape */
+    height: 80vh; /* Limit height to prevent overflow */
+    }
+    }
+
+/* ---------end of slider--------------- */
+
+/* btn that goes to the top of the home screen */
+a .home-up{
+   width: 40px;
+   height: 40px;
+   border: none;
+   background: linear-gradient(135deg,#153677,#4e085f);
+   float: right;
+   position: absolute;
+   top: 1900px;
+   right: 60px;
+   border-radius: 50%;
+   color: #fff;
+}
+a .home-up:hover{
+    background: var(--primary-color);
+}
+
+/* -----------------SECTION 5: FOOTER------------------ */
+
+footer{
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 15px;
+}
+footer p{
+    text-align: center;
+    color: var(--white);
+}
+footer p span{
+   color: var(--white);
+   
+}
+
+/* -----------MEDIA QUERIES--------- */
+@media (max-width: 640px) {
+    /* ---------NAVIGATION BAR---------- */
+    .hamburger {
+        display: block;
+        } 
+       
+        .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg,#153677,#4e085f);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+        text-align: center;
+        } 
+       
+        .nav-links.active {
+        display: flex;
+        } 
+       
+        /* --------------End of Navlinks------------- */
+        /* Hamburger animation */
+        .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 6px);
+        } 
+       
+        .hamburger.active span:nth-child(2) {
+        opacity: 0;
+        } 
+       
+        .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -5px);
+        }
+    /* ---------------SECTION 1 ABOUT ME------------- */
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about-me{
+           padding:3px 5px;
+           width: 100%;
+          
+        }
+        .about-me .profile .profile-img img{
+            height: 50px;
+            width: 50px;
+            left: 27px;
+            border-radius: 50%;
+        }
+        .about-me .profile .header h2{
+            font-size: 0.9rem;
+        }
+        .about-me .profile .header{
+            margin-bottom: 10px;
+        }
+        .about-me .profile-text {
+            line-height: 1rem;
+            padding: 5px;
+        }
+        .about-me .profile-text p{
+            font-size: 13px;
+            line-height: 1.5rem;
+        }
+
+        /* ---------SECTION 2: ABOUT ME------------ */
+        .projects .header h1{
+            padding: 10px;
+            font-size: 0.8rem;
+            margin-bottom: 3px;
+        }
+        .projects .header{
+            margin-bottom: 10px;
+        }
+        .projects .header h4{
+            font-size: 0.6rem;
+        }
+        .about-me .profile-text{
+            margin-bottom: 0;
+        }
+        .projects{
+            margin-top: 20px;
+        }
+        .project-cards{
+            display: block;
+            
+        }
+        .project-cards .card{
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        /* --------------------SECTION 3:CONTACT ME--------------- */
+        .contacts{
+            width: 380px;
+            margin: 0 auto;
+        }
+        .form-container{
+            width: 100%;
+        }
+        .contact .input-control input{
+            width: 100%;
+        }
+        .contact .input-control textarea{
+            width: 100%;
+        }
+        .contact  button{
+            width: 240px;
+        }
+
+        /* SECTION 4 :SLIDER */
+        .slider-container{
+            max-width: 350px;
+        }
+
+        /* SECTION 5:FOOTER */
+        footer p{
+            font-size: 0.8rem;
+        }
+        a .home-up{
+           display: none;
+        }
+}
