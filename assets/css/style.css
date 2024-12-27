@@ -146,6 +146,29 @@
 }
 /* --------end of section header */
 
+.featured-image {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Slightly off-white background */
+    padding: 2rem;
+  }
+  
+  .featured-image .image-container {
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
 /* --------------SECTION 2: PROJECTS----------- */
 .projects{
     margin-top: 50px;
@@ -468,7 +491,7 @@ footer p span{
 }
 
 /* -----------MEDIA QUERIES--------- */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     /* ---------NAVIGATION BAR---------- */
     .hamburger {
         display: block;
@@ -567,6 +590,13 @@ footer p span{
             margin-bottom: 20px;
         }
 
+        .featured-image {
+            padding: 1.5rem;
+          }
+        
+          .featured-image .image-container {
+            max-width: 95%; /* Adjust width for smaller screens */
+          }
         /* --------------------SECTION 3:CONTACT ME--------------- */
         .contacts{
             width: 380px;
