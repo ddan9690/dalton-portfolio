@@ -119,3 +119,9 @@ const slider = document.querySelector('.slider');
  slider.addEventListener('mouseenter', () => clearInterval(autoAdvance));
  slider.addEventListener('mouseleave', () => setInterval(nextSlide, 5000));
 
+
+
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } );
